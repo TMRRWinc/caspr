@@ -81,6 +81,7 @@ Here's some features we would like to see implemented:
 - Selectable GPT engine
 - Testing
 
+Join our [Discord](https://discord.gg/AbKCgz7XCD) to stay connected
 
 
 ## Run Development Version
