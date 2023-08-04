@@ -1,0 +1,111 @@
+{
+	"$schema": "../node_modules/@tauri-apps/cli/schema.json",
+	"build": {
+		"beforeBuildCommand": "npm run build",
+		"beforeDevCommand": "npm run dev",
+		"devPath": "http://localhost:5173/app/",
+		"distDir": "../build"
+	},
+	"package": {
+		"productName": "caspr",
+		"version": "0.1.0"
+	},
+	"tauri": {
+		"allowlist": {
+			"all": false,
+			"globalShortcut": {
+				"all": true
+			},
+			"window": {
+				"all": true
+			},
+			"process": {
+				"all": false,
+				"exit": true,
+				"relaunch": true,
+				"relaunchDangerousAllowSymlinkMacos": false
+			},
+			"dialog": {
+				"all": false,
+				"ask": true,
+				"confirm": true,
+				"message": false,
+				"open": false,
+				"save": false
+			}
+		},
+		"bundle": {
+			"active": true,
+			"category": "DeveloperTool",
+			"copyright": "",
+			"deb": {
+				"depends": []
+			},
+			"externalBin": [],
+			"icon": [
+				"icons/32x32.png",
+				"icons/128x128.png",
+				"icons/128x128@2x.png",
+				"icons/icon.icns",
+				"icons/icon.ico"
+			],
+			"identifier": "ai.caspr.tmrrw",
+			"longDescription": "",
+			"macOS": {
+				"entitlements": null,
+				"exceptionDomain": "",
+				"frameworks": [],
+				"providerShortName": null,
+				"signingIdentity": null
+			},
+			"resources": [],
+			"shortDescription": "",
+			"targets": "all",
+			"windows": {
+				"certificateThumbprint": null,
+				"digestAlgorithm": "sha256",
+				"timestampUrl": "",
+				"wix": {
+					"bannerPath": "wix_files/banner.bmp",
+					"dialogImagePath": "wix_files/dialog.bmp"
+				}
+			}
+		},
+		"security": {
+			"csp": null
+		},
+		"updater": {
+			"active": false
+		},
+		"systemTray": {
+			"menuOnLeftClick": true,
+			"iconPath": "icons/32x32.png",
+			"title": "caspr"
+		},
+		"windows": [
+			{
+				"label": "main",
+				"focus": true,
+				"fullscreen": false,
+				"width": 700,
+				"height": 94,
+				"minWidth": 700,
+				"minHeight": 94,
+				"resizable": true,
+				"title": "caspr",
+				"decorations": false,
+				"center": true,
+				"y": 67,
+				"alwaysOnTop": true,
+				"skipTaskbar": true,
+				"transparent": true,
+				"url": "/app",
+				"visible": false
+			}
+		],
+		"macOSPrivateApi": true,
+		"cli": {
+			"args": [{ "name": "--hide-on-startup", "description": "Hide the main window on startup" }]
+		}
+	}
+}
