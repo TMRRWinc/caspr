@@ -96,7 +96,7 @@ Join our [Discord](https://discord.gg/AbKCgz7XCD) to stay connected
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/TMRRWinc/caspr
 ```
 
 Go to the project directory
