@@ -1,0 +1,121 @@
+@tailwind base;
+
+@layer base {
+  form > input {
+    @apply   bg-accent_light bg-opacity-5 dark:bg-accent_dark dark:bg-opacity-5 rounded-lg w-full p-3 
+  }
+  /* Style to apply to first styled element of each tauri window */
+  .main-container {
+    @apply bg-bg_light bg-opacity-100 dark:bg-bg_dark dark:bg-opacity-100
+  }
+
+  /* Initial color for text */
+  p, input, label, button, a, h1, h2, h3, h4, h5, h6, span, div, select, option, textarea {
+    @apply outline-none bg-transparent text-text-high-contrast_light dark:text-text-high-contrast_dark
+  }
+
+  button {
+    cursor: default !important;
+  }
+
+  .inner-borders {
+    @apply border-border_light dark:border-border_dark border-opacity-10 dark:border-opacity-10
+  }
+
+  .error {
+    @apply text-error_light dark:text-error_dark
+  }
+
+  .message-container {
+    @apply text-[15px] font-medium;
+
+    p, div, ol, ul, h1, h2, h3, h4, h5, h6, br {
+      @apply mb-2;
+    }
+
+    &.user > *{
+      @apply font-semibold text-[16px];
+    }
+
+    ol {
+      @apply list-decimal
+    }
+    ul {
+      @apply list-disc
+    }
+    li {
+      @apply list-outside ml-5
+    }
+    .code-extra {
+      @apply rounded-xl overflow-hidden bg-accent_light dark:bg-brand-accent-02 bg-opacity-10 dark:bg-opacity-10 content-end
+    }
+
+    .code-extra .code-buttons {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 0.5rem;
+    }
+
+    .code-extra .code-copy-icon, .code-extra .code-wrap-icon {
+      @apply fill-text-high-contrast_light dark:fill-text-high-contrast_dark opacity-50 hover:opacity-100 dark:hover:opacity-100 m-2 self-end
+    }
+
+    .code-extra .code-wrap-button {
+      @apply m-0
+    }
+
+    .code-extra .code-copy-button {
+      @apply m-0
+    }
+    
+    code.wrap {
+      white-space: pre-wrap;
+    }
+  }
+}
+
+  
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Segma-Regular';
+  src: url('/fonts/Segma-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('/fonts/MabryProMedium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Favorit Pro';
+  src: url('/fonts/FavoritPro-Regular.otf') format('opentype');
+}
+
+body > div {
+  /* ! Do not add background-color or border */
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+p, input, label, button, a, h1, h2, h3, h4, h5, h6, span, div, select, option, textarea {
+ @apply font-segma
+}
+
+h1 {
+  @apply text-lg font-semibold
+}
+
+h2 {
+  @apply text-base font-semibold 
+}
+
+.dark {
+  color-scheme: dark;
+}
+
