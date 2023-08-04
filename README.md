@@ -40,7 +40,14 @@ The app is saved as an exception to your security settings, and you can open it 
 To circumvent this warning:
 - Click "Run anyway"
 
+### Entering Api Key
+After Installation, open settings either via menu tray or in the app:
+  - Click the Caspr Cog in the Bottom Right
+  - Click Open Settings -> API
+  - Paste API Key and Click "Set API Key"
+  - Caspr Will Reboot
 
+You're all set!
 
 ## Default Hotkeys
 
