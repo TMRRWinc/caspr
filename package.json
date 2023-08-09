@@ -56,6 +56,6 @@
 		"tauri-plugin-autostart-api": "github:tauri-apps/tauri-plugin-autostart",
 		"tauri-plugin-sql-api": "github:tauri-apps/tauri-plugin-sql",
 		"tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store",
-		"yup": "^0.32.11"
+		"yup": "^1.2.0"
 	}
 }
