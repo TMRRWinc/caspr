@@ -12,6 +12,15 @@ Caspr is a Desktop GPT Wrapper built on Tauri and Sveltekit. With Caspr, ChatGPT
 Install Caspr via our official Github releases or clone the Repo and run
 
 ```bash
+  npm install
+```
+then add a file named .env to the project root with the following content
+```bash
+# Public
+PUBLIC_API_URL=<a URL that will respond to ping>
+```
+the run
+```bash
   npm run tauri build
 ```
 
