@@ -77,6 +77,9 @@
 		"updater": {
 			"active": true,
 			"dialog": true,
+			"endpoints": [
+				"https://caspr-distribution.s3.ca-central-1.amazonaws.com/caspr-latest.json"
+			],
 			"pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU2RkI2QThBRjNGOUYwNTEKUldSUjhQbnppbXI3VmtqeW1XZGYwbWFKdHdTNXhHSkdrMUg1Zi9OdUdhSDR2UzB2QkdPQ0NQcmIK",
 			"windows": {
 				"installMode":"passive"
